@@ -11,9 +11,10 @@ The tests include the following cases:
 3. **Add Multiple Tracks**: Verifies that multiple tracks can be effectively added to the playlist.
 
 ## Requirements
-
-- Node.js (version 12 or higher)
-- Playwright
+    ```
+    - Node.js (version 12 or higher)
+    - Playwright
+    ```
 
 ## Installation
 
@@ -21,15 +22,22 @@ The tests include the following cases:
    ```bash
    git clone <repository URL>
    cd <repository name>
+   ```
 
 2. Install Dependencies: Ensure you have Node.js installed. Then, run:
-    ```npm install
+    ```
+    npm install
+    ```
 
 3. Install the necessary browsers:
-    ```npx playwright install
+    ```
+    npx playwright install
+    ```
 
 ## Usage
 1. To run the tests, use the following command:
-    ```npx playwright test
+    ```
+    npx playwright test
+    ```
 
 
