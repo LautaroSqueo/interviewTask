@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 
 test.describe('Functional UI Testing', () => {
     test('Search functionality', async ({ page }) => {
-        await page.goto('/');
+        await page.goto(process.env.BASE_URL || 'https://vite-react-alpha-lemon.vercel.app/');
 
         await page.waitForSelector('.MuiBox-root.css-3u751r');
         const fatherDiv = await page.locator('.MuiBox-root.css-3u751r');
@@ -26,7 +26,7 @@ test.describe('Functional UI Testing', () => {
     });
 
     test('Add Track using "+"', async ({ page }) => {
-        await page.goto('/');
+        await page.goto(process.env.BASE_URL || 'https://vite-react-alpha-lemon.vercel.app/');
 
         const searchInput = await page.locator('input[type="text"]');
         await searchInput.fill('Summer Breeze');
@@ -47,7 +47,7 @@ test.describe('Functional UI Testing', () => {
     });
 
     test('Add Multiple Tracks', async ({ page }) => {
-        await page.goto('/');
+        await page.goto(process.env.BASE_URL || 'https://vite-react-alpha-lemon.vercel.app/');
 
         await page.waitForSelector('.MuiBox-root.css-3u751r');
         const fatherDiv = await page.locator('.MuiBox-root.css-3u751r');
